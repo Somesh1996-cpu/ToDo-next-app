@@ -66,8 +66,8 @@ export default function Home() {
       <ToastContainer theme="dark" />
       <form onSubmit={onSubmitHandler} className="flex items-start flex-col gap-2 w-[80%] max-w-[600px] mt-10 px-2 mx-auto">
         <h3 className="text-lg font-semibold cursor-pointer text-center">Add Your Task</h3>
-        <input value={formData.title} onChange={onChangeHandler} type="text" name="title" placeholder="Enter title" className="px-3 py-2 border-2 w-full" />
-        <textarea value={formData.description} onChange={onChangeHandler} name="description" placeholder="Enter description" className="px-3 py-2 border-2 w-full"></textarea>
+        <input value={formData.title} onChange={onChangeHandler} type="text" name="title" placeholder="Enter title" className="px-3 py-2 border-2 w-full" required />
+        <textarea value={formData.description} onChange={onChangeHandler} name="description" placeholder="Enter description" className="px-3 py-2 border-2 w-full" required></textarea>
         <button type="submit" className="bg-orange-600 py-2 mt-2 px-6 text-white rounded-2xl font-bold cursor-pointer">Add ToDo</button>
       </form>
 
